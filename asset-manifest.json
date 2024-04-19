@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/atg-global/static/css/main.011cd0d9.css",
+    "main.js": "/atg-global/static/js/main.10b6bec7.js",
+    "static/js/453.4483b0a2.chunk.js": "/atg-global/static/js/453.4483b0a2.chunk.js",
+    "index.html": "/atg-global/index.html",
+    "main.011cd0d9.css.map": "/atg-global/static/css/main.011cd0d9.css.map",
+    "main.10b6bec7.js.map": "/atg-global/static/js/main.10b6bec7.js.map",
+    "453.4483b0a2.chunk.js.map": "/atg-global/static/js/453.4483b0a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.011cd0d9.css",
+    "static/js/main.10b6bec7.js"
+  ]
+}
