@@ -232,5 +232,4 @@ const FeedPage = () => {
     </div>
   );
 };
-
 export default FeedPage;
