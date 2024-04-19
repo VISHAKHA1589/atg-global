@@ -1,38 +1,351 @@
-.App {
-  text-align: center;
-}
+.Navbar{
+position: absolute;
+height: 72px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+left: 0px;
+top:2px;
+bottom: 10px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.search-input {
+  
+  background-color: #f2f2f2;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 360px;
+
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: var(--bs-body-color); */
+    appearance: none;
+    /* background-color: var(--bs-body-bg); */
+    background-clip: padding-box;
+    /* border: var(--bs-border-width) solid var(--bs-border-color); */
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+.input-invisible {
+  border: none;
+  outline: none; 
+  width: 100%;
+  background-color: transparent; 
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-invisible:focus {
+  box-shadow: none; 
+}
+
+.search-icon{
+  margin-right: 4px;
+  margin-top: 2px;
+}
+.its-free{
+  font-weight: 700;
+}
+.hero-image{
+/* Rectangle 2 */
+
+position: absolute;
+width: 100%;
+height: 440px;
+left: 0px;
+top: 72px;
+
+background: url(https://s3-alpha-sig.figma.com/img/756e/302b/7d56a759ac56bc165f65c40094aba4e8?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q6useyj0ig1wVxM~s0jDCaeWKiEaOval7f-0wn7oX2H8s-uFrypb9kN2kyJIYHMMLriW0va2MG~CXgaWkQICZxx8uLynys1yLvJOQUbgp8VJocLeW8sgtXQe0w~SnB-JWyCDA~nlmVKAq4i7JtiV73O1SjMwedPpWhaGYYqaTnC0pOzm1nKfR6b2z~KiA236lpCjLTvUmW6VrKdGLaC3C4KYmY9HESak~varsI142PxvdjWhTgn2JzfkYR6Otspwel3rCzcIN3UWBDKPOkTX5h2lC0t7oELKiuQwpQ8V8-eIXOx6uByku2ollt~wqxm2BxfQ6qNK-Uf-FU7cDeqn4w__);
+background-size: 99.80%; /* Adjust the percentage to zoom out or zoom in */
+  background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+  background-position: center; 
+
+
+}
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none; /* Allow pointer events to pass through the gradient overlay */
+}
+
+.hero-text{
+position: relative;
+width: 378px;
+height: 47px;
+left: 230px;
+top: 280px;
+font-style: normal;
+font-weight: bolder;
+font-size: 36px;
+line-height: 47px;
+color: #FFFFFF;
+
+
+}
+
+.hero-text-bottom{
+  /* 142,765 Computer Engineers follow this */
+
+position: relative;
+width: 327px;
+height: 23px;
+top: 310px;
+right: 148px;
+
+font-family: 'IBM Plex Sans';
+font-style: normal;
+font-size: 18px;
+line-height: 23px;
+
+color: #FFFFFF;
+
+
+}
+.line-top{
+  position: absolute;
+  width: 100%;
+height: 0px;
+top: 544px;
+color: transparent;
+
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+.line-bottom{
+  position: relative;
+  margin-top:535px;
+  width: 70%;
+  left: 225px;
+  
+}
+.feed-buttons{
+/* Group 34 */
+
+position: absolute;
+
+height: 21px;
+left: 200px;
+top: 559px;
+list-style: none;
+display: flex;
+  flex-direction: row;
+
+}
+.feed-buttons {
+  display: flex;
+  gap: 4px; 
+}
+
+.feed-button-single {
+  cursor: pointer;
+   /* Distribute available space equally among buttons */
+  text-align: center; /* Center-align button content */
+
+  border: 1px solid transparent; /* Ensure consistent border width */
+}
+
+.feed-button-single.active {
+  font-weight: 700; /* Bold font weight for active button */
+  /* Add any other active state styles */
+}
+
+.button-underline {
+  position: relative;
+  top: 7px;
+  display: none;
+  text-decoration: none;
+}
+
+.feed-button-single.active .button-underline {
+
+  height: 2px; 
+  background-color: #000000;  
+opacity: 90;
+  
+  display: block;
+}
+
+.write-a-post{
+
+
+position: absolute;
+width: 133px;
+height: 36px;
+
+background-color: #EDEEF0 !important;
+
+
+
+}
+.join-button{/* Rectangle 4 */
+
+  position: relative;
+  height: 36px;
+ 
+  
+  
+  background: #2F6CE5;
+  border-radius: 4px;
+  
+
+}
+.feed-buttons-main{
+  display: flex;
+  justify-content: space-between;
+margin-left: 350px;
+}
+
+
+.feed-image1 {
+  width: 40vw; /* Set the width of the div */
+  height: 230px; /* Set the height of the div */
+  overflow: hidden; /* Hide any content that overflows the div */
+  background-image: url('https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a7lMRTN0udb~HbBIsEPsIyxV7WfO2Dt3uSDANZtGtDJ8QqOByPJsuldP523tIKYII905CxZ6AQOxoGjC~JvbuKoZXzPqRNKj2dqeWhTnXzvD5AlccdLZTS62w0yG8ijR9RXVI4E6vSiVEjmRQkoegh-sgJCqP3k6mIXjj6ev0Up2As324X5r7dBX3YvFzHpF1dcIl27ihqMqo7iFP-SbKyl5Sip0TMmYf5BrI4MrOB~cbwiukWre0B4WWKXgclH93SLXrPa6hvqfJKGb~yhXNbMDheSZaD0B3Ni5w3~0KeyJpOXAw~KOaeLwABqUAOBJiT6rBQMfc-GdkvGOT~gBdw__'); /* Replace 'path/to/your/image.jpg' with the URL or path to your image */
+  background-size: 99.8%; /* Ensure the entire background image fits within the div */
+  background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+  background-position: center; /* Center the background image within the div */
+  border-bottom: none !important;
+}
+.feed-image2 {
+  width: 40vw; /* Set the width of the div */
+  height: 230px; /* Set the height of the div */
+  overflow: hidden; /* Hide any content that overflows the div */
+  background-image: url('https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NFwzEN8Coh6pnKTuYAmhG1aSVGypYU3pd9sPle2utsRL7mRWpFHi6jjBQM-qcQK3JO81VmU8den3dZRYnTWHjtOFW5tlV0C4nwkbl68DJJMEF2hXMJYSIdJGhnEP~Ua2YrQSL1E9Koy~S1AeXhtkajKeVvrPj2Pys0~fvNa81EAh72ZOYj9trVZXnutMcyJYF2NeQDkgloqGJCTYcygaZSXGFzREDbprli83ZtmENbozzI0iOD47VgANhc6X6H9N1Kf1B3lvgE9itkn8XE92c98S7feA4TpwUmBCjT6imfIbtKMsp0KcX-4scbthl5U8JHKNlSmxuVYiNJWGT5VYpQ__'); /* Replace 'path/to/your/image.jpg' with the URL or path to your image */
+  background-size: 99.8%; /* Ensure the entire background image fits within the div */
+  background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+  background-position: center; /* Center the background image within the div */
+  border-bottom: none !important;
+}
+.feed-image {
+  width: 40vw; /* Set the width of the div */
+  height: 230px; /* Set the height of the div */
+  overflow: hidden; /* Hide any content that overflows the div */
+  background-image: url('https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NFwzEN8Coh6pnKTuYAmhG1aSVGypYU3pd9sPle2utsRL7mRWpFHi6jjBQM-qcQK3JO81VmU8den3dZRYnTWHjtOFW5tlV0C4nwkbl68DJJMEF2hXMJYSIdJGhnEP~Ua2YrQSL1E9Koy~S1AeXhtkajKeVvrPj2Pys0~fvNa81EAh72ZOYj9trVZXnutMcyJYF2NeQDkgloqGJCTYcygaZSXGFzREDbprli83ZtmENbozzI0iOD47VgANhc6X6H9N1Kf1B3lvgE9itkn8XE92c98S7feA4TpwUmBCjT6imfIbtKMsp0KcX-4scbthl5U8JHKNlSmxuVYiNJWGT5VYpQ__'); /* Replace 'path/to/your/image.jpg' with the URL or path to your image */
+  background-size: 99.8%; /* Ensure the entire background image fits within the div */
+  background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+  background-position: center; /* Center the background image within the div */
+  border-bottom: none !important;
+}
+.article{
+  margin: 20px;
+}
+.article-text{
+font-weight: bold;
+font-size: 22px;
+line-height: 29.52px;
+text-align: left;
+margin-left: 20px;
+width: fit-content;
+
+}
+.post-description{
+  width: 652px;
+height: 25px;
+margin-left: 20px;
+gap: 0px;
+opacity: 0px;
+
+}
+.feed-page
+{
+  margin-right: 250px;
+}
+.user-picture{
+  width: 38px;
+height: 38px;
+
+gap: 0px;
+border-radius: 100%;
+opacity: 0px;
+margin-bottom: 20px;
+margin-left: 20px;
+
+}
+
+.feed-text{
+  width: 40vw; /* Set the width of the div */
+  height: 230px;
+
+}
+.userName{
+
+font-size: 18px;
+line-height: 23.4px;
+text-align: center;
+margin-top: 5px;
+margin-left: 9px;
+font-weight: 700;
+
+}
+
+.menu-button{
+ margin-right: 19px;
+
+}
+
+.feed-side{
+  /* Noida, India */
+  
+position: absolute;
+
+height: 18px;
+left: 1019px;
+top: 656px;
+font-style: normal;
+font-size: 14px;
+line-height: 18px;
+
+color: #000000;
+
+
+}
+.location{
+  display: flex;
+  font-weight: 700;
+
+}
+.feed-side-line{
+  /* Line 3 */
+
+position: absolute;
+width: 243px;
+height: 0px;
+margin-top: 0px;
+
+border: 0.4px solid #B8B8B8;
+
+}
+
+.edit{
+  margin-left: 110px;
+  align-items: center;
+}
+.info{
+  /* Group 42 */
+
+position: absolute;
+gap: 4px;
+height: 32px;
+left: 1010px;
+top: 717px;
+display: flex;
+
+}
+.info-text{
+  margin-top: 5px !important;
 }

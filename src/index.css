@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'IBM Plex Sans'; /* Corrected placement */
+  font-size: 14px; /* Corrected placement */
+  line-height: 18.2px; /* Corrected placement */
+  text-align: left; /* Corrected placement */
 }
 
 code {
